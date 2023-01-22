@@ -8,16 +8,16 @@ from pynput.mouse import Button, Controller
 # It may malfunction during lag/autosave
 
 
-delay1 = input('delay between moving mouse and pressing recommended 0.02')  # delay between moving mouse and pressing slightly dependent on lag
-delay2 = input('delay for effect to take place recommended 0.1')   # delay for effect to take place highly dependent on lag
-delay3 = input('delay for scroll recommended 0.13')   # delay for scroll
-delay4 = input('delay before putting division back recommended 0.2')   # delay before putting back
+delay1 = float(input('delay between moving mouse and pressing recommended 0.02: '))  # delay between moving mouse and pressing slightly dependent on lag
+delay2 = float(input('delay for effect to take place recommended 0.1: '))   # delay for effect to take place highly dependent on lag
+delay3 = float(input('delay for scroll recommended 0.13: '))   # delay for scroll
+delay4 = float(input('delay before putting division back recommended 0.2: '))   # delay before putting back
 
-numFreeGen = input('How many unused generals + field marshals')     # How many unused generals + field marshals
-numGen = input('How many generals + field marshals your country has')       # How many generals + field marshals your country has
-numArmyGroup = input('Number of army groups in the sector')    # Number of army groups in the sector
-numArmy = input('Number of armies in the sector')        # Number of armies in the sector
-startPosition = input('From No.which general to start')
+numFreeGen = int(input('How many unused generals + field marshals: '))    # How many unused generals + field marshals
+numGen = int(input('How many generals + field marshals your country has: '))       # How many generals + field marshals your country has
+numArmyGroup = int(input('Number of army groups in the sector: '))    # Number of army groups in the sector
+numArmy = int(input('Number of armies in the sector: '))        # Number of armies in the sector
+startPosition = int(input('From No.which general to start: '))
 usedGen = min(numFreeGen, numGen - 4)
 spaceScroll = 416 / (numGen - 5)
 
