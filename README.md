@@ -7,3 +7,5 @@ dependent on lag
 check in script comments
 
 pip install pynput, pyautogui, keyboard before use
+
+current hotkey is '.'
